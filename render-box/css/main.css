@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap");
+a,
+button {
+  text-decoration: none;
+  border: none;
+}
+
+header {
+  background-color: var(--header-bckg);
+  z-index: 1000;
+  width: 100%;
+  border: 1px solid #fff;
+  color: var(--header-color);
+  font-family: system-ui;
+}
+header .header {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__logo {
+  color: var(--header-color);
+  font-family: "Maven Pro", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+header .header ul {
+  display: flex;
+  font-weight: 500;
+  gap: 2.75em;
+  list-style: none;
+}
+header .header ul > * {
+  cursor: pointer;
+}
+header .header button {
+  background: var(--header-btn-bckg);
+  color: var(--header-color);
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.render {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  gap: 1em;
+}
+.render .card {
+  background-color: #181818;
+  color: #fff;
+  padding: 16px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.render .card:hover {
+  background-color: #292929;
+}
+.render .card__img {
+  position: relative;
+  overflow: hidden;
+}
+.render .card__img img {
+  max-width: 200px;
+  width: 100%;
+  border-radius: 6px;
+}
+.render .card__img button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.render .card__img button i {
+  font-size: 28px;
+  font-weight: 800;
+}
+.render .card__img button {
+  transition: 0.2s;
+  opacity: 0;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border: none;
+  background-color: #1fdf65;
+  border-radius: 50%;
+  bottom: -20px;
+  right: 10px;
+}
+.render .card__content {
+  margin-top: 10px;
+  font-family: system-ui;
+}
+.render .card__content--title {
+  font-weight: 700;
+}
+.render .card__content--by {
+  margin-top: 7px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.card {
+  transition: 0.2s;
+}
+
+.card .card__img {
+  box-shadow: 0 0 20px #171717;
+}
+
+.card:hover .hover-btn {
+  bottom: 10px;
+  opacity: 1;
+}
+
+:root {
+  --color-white: #fff;
+  --color-spotify-green: #1ed760;
+  --color-spotify-green-o: #1db954;
+  --color-gry: #181818;
+  --header-color: var(--color-white);
+  --header-btn-bckg: var(--color-spotify-green-o);
+  --header-bckg: var(--color-gry) ;
+}
+
+/*
+  Regular 400
+  Medium 500
+  SemiBold 600
+  Bold 700
+  ExtraBold 800
+  Black 900
+*/
+/*
+  ExtraLight 200
+  ExtraLight 200 Italic
+  Light 300
+  Light 300 Italic
+  Regular 400
+  Regular 400 Italic
+  Medium 500
+  Medium 500 Italic
+  SemiBold 600
+  SemiBold 600 Italic
+  Bold 700
+  Bold 700 Italic
+  ExtraBold 800
+*//*# sourceMappingURL=main.css.map */
